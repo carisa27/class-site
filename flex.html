@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>flexing box page</title>
+
+<style>
+html {
+  box-sizing:border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+#box1 {
+  background: black;
+  display: flex;
+  flex-direction: row-reverse;
+}
+#box2 {
+  background: black;
+  display: flex;
+  flex-direction: row;
+}
+#box3 {
+  background: black;
+  display: flex;
+  flex-direction: column;
+}
+#box4 {
+  background: black;
+  display: flex;
+  flex-direction: column-reverse; 
+}
+#box5 {
+  background: black;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.red {
+  background: pink;
+  width: 150px;
+  height: 150px;
+}
+
+.yellow {
+  background: purple;
+  width: 150px;
+  height: 150px;
+}
+
+.blue{
+  background: lightblue;
+  width: 150px;
+  height: 150px;
+}
+
+
+</style>
+</head>
+
+<body>
+  <div id="box1">
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+  </div>
+
+
+  <div id="box2">
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+      </div>
+      <div id="box3">
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+  </div>
+  <div id="box4">
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+  </div>
+  <div id="box5">
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+
+
+</html>
+
+
+<!-- end of content -->
