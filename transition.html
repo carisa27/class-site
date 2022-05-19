@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>transitions</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      background-image: radial-gradient(circle 800px at 6.8% 8.3%, rgba(255, 244, 169, 1) 0%, rgba(255, 244, 234, 1) 100.2%);
+      min-height: 100vh;
+      background-attachment: fixed;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+
+    h1 {
+      color: orange;
+      font-size: 2rem;
+      text-shadow: 0px 0px transparent;
+      transition: color 1s,font-size .5s,text-shadow
+      .5s;
+    }
+h1:hover{
+  color: purple;
+  font-size: 3rem;
+  text-shadow: 2px 2px black;
+}
+
+    #box1 {
+      background: lightblue;
+      height:200px;
+      width:200px;
+      border-radius:50%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      color:purple;
+      border:15px solid gray;
+      transition:background 1s, border 1s, border-radius .5s;
+      font-size: 2rem;
+    }
+
+    #box1:hover {
+      background:purple;
+      border: 15px solid gray;
+      border-radius:15%;
+      color:lightblue;
+      font-size: 3rem;
+    }
+
+    #box2 {
+      background: orange;
+      height:200px;
+      width:200px;
+      border-radius:50%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      border:15px solid #D42C04;
+      transition:background 1s, border 1s, border-radius .5s;
+      font-size: 2rem;
+    }
+
+    #box2:hover {  background:#D84C96;
+      border: 15px solid white;
+      border-radius:15%;
+      color:#A40464;
+      font-size: 3rem; }
+
+    #box3 {background: white;
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #DC3CE4;
+    border:15px solid #F97283;
+    transition:background 1s, border 1s, border-radius .5s;
+    font-size: 2rem;}
+
+    #box3:hover { background:darkblue;
+      border: 15px solid black;
+      border-radius:15%;
+      color: white ;
+      font-size: 3rem;}
+  </style>
+</head>
+
+<body>
+  <h1>amazing transforming text</h1>
+  <p>
+    examples of cool hover transforms and transitions
+  </p>
+
+  <div id="box1">
+    <p>transform</p>
+  </div>
+  <br />
+  <div id="box2">
+    <p>transform</p>
+  </div>
+
+  <div id="box3">
+    <p>transform</p>
+  </div>
+</body>
+
+</html>

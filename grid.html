@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+ <title>poopy pants</title>
+ <style>
+
+ html {
+   box-sizing:border-box;
+ }
+
+ *,
+ *::before,
+ *::after{
+   box-sizing: inherit;
+ }
+ .container {  display: grid;
+  grid-template-columns: 1fr 3.3fr 0.7fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "side-left center side-right"
+    "big-left big-left ."
+    ". big-right big-right"
+    "footer footer footer";
+}
+
+.header { grid-area: header;
+background: lightblue;
+ }
+
+.side-left { grid-area: side-left; }
+
+.center { grid-area: center; }
+
+.side-right { grid-area: side-right; }
+
+.big-left { grid-area: big-left; }
+
+.big-right { grid-area: big-right; }
+
+.footer { grid-area: footer; }
+
+ </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header"><h1>fgdfdndfhd</h1></div>
+
+    <div class="side-left"></div>
+    <div class="center"></div>
+    <div class="side-right"></div>
+    <div class="big-left"></div>
+    <div class="big-right"></div>
+    <div class="footer"></div>
+  </div>
+  </body>
+ </html>
